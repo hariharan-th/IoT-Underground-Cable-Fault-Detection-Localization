@@ -28,6 +28,30 @@ The public firmware copy replaces the ThingSpeak write key with `YOUR_THINGSPEAK
 
 This repository contains project source files only. Hardware behavior and MATLAB/Simulink execution have not been validated as part of repository setup. Verify sensor calibration, relay logic, and communications with safe test equipment before connecting field hardware.
 
+## ThingSpeak monitoring
+
+Example dashboard screenshot showing current, voltage, and fault-status channels. The image is a supplied project output, not a live-verified dashboard capture.
+
+![ThingSpeak monitoring dashboard](assets/thingspeak-monitoring.png)
+
+## Fault notifications
+
+The supplied interface illustrates cable-fault alerts with phase, fault type, estimated distance, and a fault-cleared status message.
+
+![Cable fault notification interface](assets/notification-interface.png)
+
+## Fault detection and localization output
+
+Example short-circuit localization result showing the estimated and actual fault positions.
+
+![Fault detection and localization output](assets/fault-detection-output.png)
+
+## System flowchart
+
+Concept flow from the low-voltage test supply and cable circuit through sensing and microcontroller processing to local/IoT outputs. The diagram also shows validation and optional route mapping.
+
+![Underground cable fault detection system flowchart](assets/system-flowchart.png)
+
 ## Topics
 
 `iot` · `arduino` · `esp32` · `matlab` · `simulink` · `cable-fault-detection` · `fault-localization` · `thingspeak`
